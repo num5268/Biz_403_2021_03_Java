@@ -12,7 +12,7 @@ package com.callor.hello;
 			System.out.println(2 % 2);
 			System.out.println(3 % 2);
 			System.out.println(4 % 2);
-			System.out.println(62.5 % 12);
+			System.out.println(78 % 12);
 	}
 
 }
