@@ -12,6 +12,21 @@ public class Values_06 {
 			// 그렇지 않으면 그수는 홀수이다
 			System.out.println( (33 % 2) == 0 
 					? "짝수":"홀수");
+			System.out.println(33%2); //결과표시
+			System.out.println((33%2) ==0); //결과가 0이냐?
+			
+			// 연산 ? true일때 : false일때
+			System.out.println((33%2) ==0 ? "짝수":"홀수");
+			System.out.println( 33>10 ? "33이 10보다 크다"
+						: "33은 10보다 작다");
+			
+			//삼항연산자
+			//비교 ? true : false 와같이 항목이 3가지가 구분
+			//		되어있는 연산 
+			System.out.println(3==3 ? "맞다":"아니요");
+			
+			System.out.println("3==3 연산이true이냐?");
+			System.out.println(3==3 ? "맞다":"아니다");
 		}
 
 }
