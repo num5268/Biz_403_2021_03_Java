@@ -5,7 +5,7 @@ package com.callor.values;
  * 여기에서 부터 자바 코드가 시작된다
  */
 
-public class values_01 {
+public class Values_01 {
 	
 	/*
 	 * main() 메서드 (method)

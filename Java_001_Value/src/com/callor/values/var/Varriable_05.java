@@ -16,6 +16,7 @@ public class Varriable_05 {
 		System.out.printf("%d + %d = %d" , num1,num2,sum);
 		System.out.printf("%d 와 %d 를 덧셈한 결과%d"
 					,num1,num2,sum);
+		System.out.println();
 	}
 
 }
