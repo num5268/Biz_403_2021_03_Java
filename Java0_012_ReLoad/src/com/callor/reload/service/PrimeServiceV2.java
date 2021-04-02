@@ -4,7 +4,7 @@ public class PrimeServiceV2 extends PrimeServiceV1 {
 	
 	// protected로 선언된 객체, 변수는
 	// 자동으로 생성되어
-	// 상속 받은 곳에서 사용할 수있다.
+	// 상속 받은 곳에서 사용할 수 있다.
 	// Random rnd;
 	
 	public void primeNum() {
