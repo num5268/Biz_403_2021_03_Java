@@ -76,8 +76,6 @@ public class InputNumberV1 {
 				try {
 					intNum = Integer.valueOf(strNum);
 				} catch (NumberFormatException e) {
-					// TODO Auto-generated catch block
-					//e.printStackTrace();
 					System.out.println("입력오류");
 					continue;
 				}

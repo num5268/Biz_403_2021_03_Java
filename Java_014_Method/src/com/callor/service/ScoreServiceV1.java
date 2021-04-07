@@ -8,15 +8,16 @@ public class ScoreServiceV1 {
 	
 	protected Scanner scan = new Scanner(System.in);
 	
-	public void inputScore() {
+	public Integer inputScore() {
 		
-		Integer retNum = inputNum.inputValue("국어",0,100);
+		Integer retNum = inputNum.inputValue("kor",0,100);
 		
 		if(retNum == null) {
 			System.out.println("종료");
 		} else {
 			System.out.printf("점수 : %d",retNum);
 		}
+		return retNum;
 	}
 	
 }
