@@ -53,8 +53,10 @@ public class InputServiceV2 {
 		}
 		
 	/*
-	 * 정수 범위에 대한 유효성검사를 수행하는 method 이미 만들어진 inputValue(String title) method와 연동하여
-	 * 사용하겠다
+	 * 정수 범위에 대한 유효성검사를 
+	 * 		수행하는 method 이미 만들어진 
+	 * 		inputValue(String title) method와 연동하여
+	 * 		사용하겠다
 	 */
 	public Integer inputValue(String title, int start, int end) {
 
