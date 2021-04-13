@@ -31,7 +31,7 @@
 		종류별 그룹 : com.callor.score.exec
 
 	나. base-package
-		3단계 package 명칭
+		3단계 package 명칭ㅋ
 		com.callor.score
 		com.naver.news
 		net.daum.cafe
