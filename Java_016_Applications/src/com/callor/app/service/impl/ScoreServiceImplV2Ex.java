@@ -21,21 +21,22 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV2 {
 
 	protected String[] subjectList;
 	protected Integer[] subScoreList;
-	
+
 	// 과목명, 과목점수가 담긴 배열에 대한 위치를
 	// 숫자로 사용하지 않고 명명된 이름으로 사용하기 위하여
 	// 배열의 index 값을 상수로 선언해 둔다.
-	protected final int 국어 =0;
-	protected final int 영어 =1;
-	protected final int 수학 =2;
-	
+	protected final int 국어 = 0;
+	protected final int 영어 = 1;
+	protected final int 수학 = 2;
+
 	public ScoreServiceImplV2Ex() {
 		ipService = new InputServiceImplV1();
 		scoreList = new ArrayList<ScoreVO>();
-		
-		subjectList = new String[] {"국어","영어","수학"};
-		subScoreList = new Integer[ subjectList.length];
+
+		subjectList = new String[] { "국어", "영어", "수학" };
+		subScoreList = new Integer[subjectList.length];
 	}
+
 	@Override
 	public void inputScore() {
 		Integer intNum = ipService.inputValue("학번", 1);
@@ -65,13 +66,13 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV2 {
 		// String[] subject = { "국어", "영어", "수학" };
 		// subject 배열을 맴버영역으로 이동 subjectList로
 		// 점수를 입력하는 곳에서 사용하기 위하여 선언된 배열
-		//		과목명을 담을 배열을 선언했는데
-		// 		생각해 보니 다른 method에서도 사용할수 있을 거같다
-		// 		그래서 클래스 영역으로 이동하였다.
-		
+		// 과목명을 담을 배열을 선언했는데
+		// 생각해 보니 다른 method에서도 사용할수 있을 거같다
+		// 그래서 클래스 영역으로 이동하였다.
+
 		// 과목수 만큼 점수를 저장할 배열을 선언
 		// Integer[] intScore = new Integer[subject.length];
-		// intScore 배열을 맴버영역으로 이동 sunScoreList로
+		// intScore 배열을 맴버영역으로 이동 subScoreList로
 
 		for (int i = 0; i < subjectList.length; i++) {
 			subScoreList[i] = ipService.inputValue(subjectList[i], 0, 100);
@@ -79,55 +80,51 @@ public class ScoreServiceImplV2Ex extends ScoreServiceImplV2 {
 				return;
 			}
 		}
-		
+
 		ScoreVO scoreVO = new ScoreVO();
 		scoreVO.setNum(strNum);
 		scoreVO.setName(strName);
-		
+
 		scoreVO.setKor(subScoreList[국어]);
 		scoreVO.setEng(subScoreList[영어]);
 		scoreVO.setMath(subScoreList[수학]);
-		
+
 		scoreVO.setKor(subScoreList[Values.국어]);
 		scoreVO.setEng(subScoreList[Values.영어]);
 		scoreVO.setMath(subScoreList[Values.수학]);
-		
+
 		// 디버깅 코드, VO에 담긴 데이터 확인하기
 		System.out.println("=".repeat(50));
 		System.out.println(scoreVO.toString());
 		System.out.println("=".repeat(50));
 		scoreList.add(scoreVO);
 	}
+
 	@Override
 	public void printScore() {
 		System.out.println("빛나라 고교 성적리스트 2021");
 		System.out.println("=".repeat(80));
 		System.out.print("학번\t");
 		System.out.print("이름\t");
-		for(int index= 0; index < subjectList.length; index++) {
-			System.out.print(subjectList[index]+ "\t");
+		for (int index = 0; index < subjectList.length; index++) {
+			System.out.print(subjectList[index] + "\t");
 		}
-		
+
 		System.out.print("총점\t");
 		System.out.println("평균");
 		System.out.println("-".repeat(80));
-		
+
 		int nSize = scoreList.size();
-		for(int i = 0; i< nSize; i++) {
+		for (int i = 0; i < nSize; i++) {
 			ScoreVO vo = scoreList.get(i);
-			System.out.print(vo.getNum()+ "\t");
-			System.out.print(vo.getName()+ "\t");
-			System.out.print(vo.getKor()+ "\t");
-			System.out.print(vo.getEng()+ "\t");
-			System.out.print(vo.getMath()+ "\t");
-			System.out.print(vo.getTotal()+ "\t");
-			System.out.printf("%3.2f\n",vo.getAvg());
+			System.out.print(vo.getNum() + "\t");
+			System.out.print(vo.getName() + "\t");
+			System.out.print(vo.getKor() + "\t");
+			System.out.print(vo.getEng() + "\t");
+			System.out.print(vo.getMath() + "\t");
+			System.out.print(vo.getTotal() + "\t");
+			System.out.printf("%3.2f\n", vo.getAvg());
 		}
 		System.out.println("=".repeat(80));
 	}
-	
-	
-
-	
-	
 }

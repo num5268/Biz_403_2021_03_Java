@@ -21,6 +21,10 @@ public class MenuServiceImplV1 implements MenuService {
 	 * MenuServiceImplV1 클래스를 사용하여 객체를 생성할때는
 	 * title 변수와 menuList에 값을 담아서 파라메터로 전달하고
 	 * 생성자를 호출을 해야 한다.
+	 * 
+	 * new MenuServiceImplV1() 형식으로 작성이안된다 
+	 * 반드시 String, List형 두개의 값을 전달해 주어야 한다
+	 * new MenuServiceImplV1(title,menuList) 형식으로 작성해야 한다
 	 */
 	public MenuServiceImplV1(String title, List<String> menuList) {
 		
@@ -42,7 +46,7 @@ public class MenuServiceImplV1 implements MenuService {
 			int nSize = menuList.size();
 			for (int menuIndex = 0; menuIndex < nSize; menuIndex++) {
 				System.out.printf("%d.%s\n"
-						,menuIndex ,menuList.get(menuIndex));
+						,menuIndex +1 ,menuList.get(menuIndex));
 			}
 			System.out.println("QUIT.업무종료");
 			System.out.println("-".repeat(50));
