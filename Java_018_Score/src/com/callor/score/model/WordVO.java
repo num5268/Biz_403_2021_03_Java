@@ -2,14 +2,14 @@ package com.callor.score.model;
 
 public class WordVO {
 	
-	private String english;
+	private String englisg;
 	private String korea;
 	private String count;
 	public String getEnglisg() {
-		return english;
+		return englisg;
 	}
-	public void setEnglisg(String english) {
-		this.english = english;
+	public void setEnglisg(String englisg) {
+		this.englisg = englisg;
 	}
 	public String getKorea() {
 		return korea;
@@ -25,7 +25,7 @@ public class WordVO {
 	}
 	@Override
 	public String toString() {
-		return "WordVO [englisg=" + english + ", korea=" + korea + 
+		return "WordVO [englisg=" + englisg + ", korea=" + korea + 
 				", count=" + count + "]";
 	}
 	
