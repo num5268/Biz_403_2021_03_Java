@@ -38,7 +38,5 @@ public class FileReader_01 {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
-
 }
