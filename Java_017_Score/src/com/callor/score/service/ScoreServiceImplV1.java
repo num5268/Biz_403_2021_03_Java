@@ -6,10 +6,7 @@ import com.num5268.standard.impl.InputServiceImplV1;
 
 public class ScoreServiceImplV1 implements ScoreService {
 
-	protected MenuService menuService;
-	protected InputService inService;
 	public ScoreServiceImplV1() {
-		inService = new InputServiceImplV1();
 	}
 	@Override
 	public void selectMenu() {
