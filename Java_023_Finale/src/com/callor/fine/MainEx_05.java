@@ -17,15 +17,15 @@ public class MainEx_05 {
 		// 배열 100개에 저장된 값중에서 소수인 값들만 출력
 		for(int i =0; i < nums.length; i++) {
 			int index = 0;
-			for(index = 2; index<nums.length; index++) {
-				if(index % 2 == 0) {
+			for(index = 2; index < nums.length; index++) {
+				if(nums[i] % index == 0) {
 					break;
 				}
 			}
-			if( index < 100) {
-				System.out.println(index);
+			if( index < nums[i]) {
+				//System.out.println(nums[i]+"는 소수아님");
 			} else {
-				System.out.println(index);
+				System.out.println(nums[i]+"는 소수");
 			}
 		}
 	}

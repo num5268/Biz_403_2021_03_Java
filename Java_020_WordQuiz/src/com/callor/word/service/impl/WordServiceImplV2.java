@@ -6,18 +6,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
-import java.util.Scanner;
 
 import com.callor.word.domain.ScoreVO;
 import com.callor.word.domain.WordVO;
-import com.num5268.standard.InputService;
-import com.num5268.standard.MenuService;
-import com.num5268.standard.impl.InputServiceImplV1;
-import com.num5268.standard.impl.MenuServiceImplV1;
 
 /*
  * 점수

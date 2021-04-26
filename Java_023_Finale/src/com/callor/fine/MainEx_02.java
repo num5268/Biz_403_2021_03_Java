@@ -5,10 +5,10 @@ import com.callor.fine.model.ScoreVO;
 public class MainEx_02 {
 	
 	public static void main(String[]args) {
-		
+
 		ScoreVO[] scoreVO = new ScoreVO[10];
 		
-		int index = 3;
+		int index = 0;
 		scoreVO[index].setNum("0001");
 		scoreVO[index].setKor(90);
 		scoreVO[index].setEng(88);

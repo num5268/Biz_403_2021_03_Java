@@ -15,7 +15,6 @@ import com.callor.word.service.service.WordService;
 import com.num5268.standard.InputService;
 import com.num5268.standard.MenuService;
 import com.num5268.standard.impl.InputServiceImplV1;
-import com.num5268.standard.impl.MenuServiceImplV1;
 
 public class WordServiceImplV1 implements WordService{
 	
