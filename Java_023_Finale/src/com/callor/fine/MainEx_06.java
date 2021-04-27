@@ -17,6 +17,7 @@ public class MainEx_06 {
 			scoreVO.setKor(90);
 			
 			scoreList.add(scoreVO);
+			System.out.println(scoreVO.getNum());
 		}
 	}
 }

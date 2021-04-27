@@ -39,7 +39,7 @@ public class MainEx_01 {
 		
 		intSum = 0;
 		for(int i =0; i< 100; i++) {
-			intSum += i+1;
+			intSum += i;
 		}
 		System.out.println("1~100까지 덧셈결과 : " + intSum);
 		
